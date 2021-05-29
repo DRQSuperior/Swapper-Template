@@ -42,16 +42,17 @@ namespace SwapperTemplate
             this.SidePannel = new Siticone.Desktop.UI.WinForms.SiticoneGradientPanel();
             this.SwapperIcon = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.MainPannel = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticoneSeparator1 = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
+            this.fnnews = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.patchnotes = new System.Windows.Forms.RichTextBox();
             this.SidePannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SwapperIcon)).BeginInit();
+            this.MainPannel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fnnews)).BeginInit();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
             // 
-            this.siticoneBorderlessForm1.BorderRadius = 1;
             this.siticoneBorderlessForm1.ContainerControl = this;
-            this.siticoneBorderlessForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(123)))), ((int)(((byte)(252)))));
             // 
             // siticoneControlBox1
             // 
@@ -59,7 +60,7 @@ namespace SwapperTemplate
             this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(123)))), ((int)(((byte)(252)))));
             this.siticoneControlBox1.HoverState.Parent = this.siticoneControlBox1;
             this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1256, 1);
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1256, 2);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
             this.siticoneControlBox1.ShadowDecoration.Parent = this.siticoneControlBox1;
             this.siticoneControlBox1.Size = new System.Drawing.Size(20, 20);
@@ -80,12 +81,13 @@ namespace SwapperTemplate
             this.DashbordBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DashbordBTN.ForeColor = System.Drawing.Color.White;
             this.DashbordBTN.HoverState.Parent = this.DashbordBTN;
-            this.DashbordBTN.Location = new System.Drawing.Point(12, 211);
+            this.DashbordBTN.Location = new System.Drawing.Point(12, 217);
             this.DashbordBTN.Name = "DashbordBTN";
             this.DashbordBTN.ShadowDecoration.Parent = this.DashbordBTN;
             this.DashbordBTN.Size = new System.Drawing.Size(224, 45);
             this.DashbordBTN.TabIndex = 1;
             this.DashbordBTN.Text = "Dashbord";
+            this.DashbordBTN.Click += new System.EventHandler(this.DashbordBTN_Click);
             // 
             // SkinsBTN
             // 
@@ -101,12 +103,13 @@ namespace SwapperTemplate
             this.SkinsBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.SkinsBTN.ForeColor = System.Drawing.Color.White;
             this.SkinsBTN.HoverState.Parent = this.SkinsBTN;
-            this.SkinsBTN.Location = new System.Drawing.Point(12, 289);
+            this.SkinsBTN.Location = new System.Drawing.Point(12, 295);
             this.SkinsBTN.Name = "SkinsBTN";
             this.SkinsBTN.ShadowDecoration.Parent = this.SkinsBTN;
             this.SkinsBTN.Size = new System.Drawing.Size(224, 45);
             this.SkinsBTN.TabIndex = 2;
             this.SkinsBTN.Text = "Skins";
+            this.SkinsBTN.Click += new System.EventHandler(this.SkinsBTN_Click);
             // 
             // BackblingsBTN
             // 
@@ -123,12 +126,13 @@ namespace SwapperTemplate
             this.BackblingsBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BackblingsBTN.ForeColor = System.Drawing.Color.White;
             this.BackblingsBTN.HoverState.Parent = this.BackblingsBTN;
-            this.BackblingsBTN.Location = new System.Drawing.Point(12, 407);
+            this.BackblingsBTN.Location = new System.Drawing.Point(12, 373);
             this.BackblingsBTN.Name = "BackblingsBTN";
             this.BackblingsBTN.ShadowDecoration.Parent = this.BackblingsBTN;
             this.BackblingsBTN.Size = new System.Drawing.Size(224, 45);
             this.BackblingsBTN.TabIndex = 3;
             this.BackblingsBTN.Text = "Backblings";
+            this.BackblingsBTN.Click += new System.EventHandler(this.BackblingsBTN_Click);
             // 
             // EmotesBTN
             // 
@@ -144,12 +148,13 @@ namespace SwapperTemplate
             this.EmotesBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.EmotesBTN.ForeColor = System.Drawing.Color.White;
             this.EmotesBTN.HoverState.Parent = this.EmotesBTN;
-            this.EmotesBTN.Location = new System.Drawing.Point(12, 485);
+            this.EmotesBTN.Location = new System.Drawing.Point(12, 451);
             this.EmotesBTN.Name = "EmotesBTN";
             this.EmotesBTN.ShadowDecoration.Parent = this.EmotesBTN;
             this.EmotesBTN.Size = new System.Drawing.Size(224, 45);
             this.EmotesBTN.TabIndex = 4;
             this.EmotesBTN.Text = "Emotes";
+            this.EmotesBTN.Click += new System.EventHandler(this.EmotesBTN_Click);
             // 
             // PickaxesBTN
             // 
@@ -165,12 +170,13 @@ namespace SwapperTemplate
             this.PickaxesBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.PickaxesBTN.ForeColor = System.Drawing.Color.White;
             this.PickaxesBTN.HoverState.Parent = this.PickaxesBTN;
-            this.PickaxesBTN.Location = new System.Drawing.Point(12, 563);
+            this.PickaxesBTN.Location = new System.Drawing.Point(12, 529);
             this.PickaxesBTN.Name = "PickaxesBTN";
             this.PickaxesBTN.ShadowDecoration.Parent = this.PickaxesBTN;
             this.PickaxesBTN.Size = new System.Drawing.Size(224, 45);
             this.PickaxesBTN.TabIndex = 5;
             this.PickaxesBTN.Text = "Pickaxes";
+            this.PickaxesBTN.Click += new System.EventHandler(this.PickaxesBTN_Click);
             // 
             // MiscBTN
             // 
@@ -186,72 +192,91 @@ namespace SwapperTemplate
             this.MiscBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.MiscBTN.ForeColor = System.Drawing.Color.White;
             this.MiscBTN.HoverState.Parent = this.MiscBTN;
-            this.MiscBTN.Location = new System.Drawing.Point(12, 641);
+            this.MiscBTN.Location = new System.Drawing.Point(0, 571);
             this.MiscBTN.Name = "MiscBTN";
             this.MiscBTN.ShadowDecoration.Parent = this.MiscBTN;
             this.MiscBTN.Size = new System.Drawing.Size(224, 45);
             this.MiscBTN.TabIndex = 6;
             this.MiscBTN.Text = "Misc";
+            this.MiscBTN.Click += new System.EventHandler(this.MiscBTN_Click);
             // 
             // SidePannel
             // 
-            this.SidePannel.Controls.Add(this.siticoneSeparator1);
             this.SidePannel.Controls.Add(this.SwapperIcon);
-            this.SidePannel.Location = new System.Drawing.Point(12, 28);
+            this.SidePannel.Controls.Add(this.MiscBTN);
+            this.SidePannel.Location = new System.Drawing.Point(12, 34);
             this.SidePannel.Name = "SidePannel";
             this.SidePannel.ShadowDecoration.Parent = this.SidePannel;
             this.SidePannel.Size = new System.Drawing.Size(224, 619);
             this.SidePannel.TabIndex = 7;
-            this.SidePannel.Paint += new System.Windows.Forms.PaintEventHandler(this.SidePannel_Paint);
             // 
             // SwapperIcon
             // 
             this.SwapperIcon.ImageRotate = 0F;
-            this.SwapperIcon.Location = new System.Drawing.Point(22, 15);
+            this.SwapperIcon.Location = new System.Drawing.Point(12, 3);
             this.SwapperIcon.Name = "SwapperIcon";
             this.SwapperIcon.ShadowDecoration.Parent = this.SwapperIcon;
-            this.SwapperIcon.Size = new System.Drawing.Size(176, 139);
+            this.SwapperIcon.Size = new System.Drawing.Size(200, 170);
             this.SwapperIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SwapperIcon.TabIndex = 8;
             this.SwapperIcon.TabStop = false;
             // 
             // MainPannel
             // 
-            this.MainPannel.Location = new System.Drawing.Point(252, 28);
+            this.MainPannel.Controls.Add(this.patchnotes);
+            this.MainPannel.Controls.Add(this.fnnews);
+            this.MainPannel.Location = new System.Drawing.Point(252, 34);
             this.MainPannel.Name = "MainPannel";
             this.MainPannel.ShadowDecoration.Parent = this.MainPannel;
             this.MainPannel.Size = new System.Drawing.Size(1012, 619);
             this.MainPannel.TabIndex = 8;
             // 
-            // siticoneSeparator1
+            // fnnews
             // 
-            this.siticoneSeparator1.Location = new System.Drawing.Point(11, 168);
-            this.siticoneSeparator1.Name = "siticoneSeparator1";
-            this.siticoneSeparator1.Size = new System.Drawing.Size(200, 10);
-            this.siticoneSeparator1.TabIndex = 0;
+            this.fnnews.ImageRotate = 0F;
+            this.fnnews.Location = new System.Drawing.Point(557, 3);
+            this.fnnews.Name = "fnnews";
+            this.fnnews.ShadowDecoration.Parent = this.fnnews;
+            this.fnnews.Size = new System.Drawing.Size(372, 200);
+            this.fnnews.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fnnews.TabIndex = 1;
+            this.fnnews.TabStop = false;
+            // 
+            // patchnotes
+            // 
+            this.patchnotes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.patchnotes.Location = new System.Drawing.Point(0, 0);
+            this.patchnotes.Name = "patchnotes";
+            this.patchnotes.ReadOnly = true;
+            this.patchnotes.Size = new System.Drawing.Size(463, 619);
+            this.patchnotes.TabIndex = 2;
+            this.patchnotes.Text = "";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(123)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1276, 708);
+            this.ClientSize = new System.Drawing.Size(1276, 687);
             this.Controls.Add(this.siticoneControlBox1);
             this.Controls.Add(this.MainPannel);
-            this.Controls.Add(this.MiscBTN);
             this.Controls.Add(this.PickaxesBTN);
             this.Controls.Add(this.EmotesBTN);
             this.Controls.Add(this.BackblingsBTN);
             this.Controls.Add(this.SkinsBTN);
             this.Controls.Add(this.DashbordBTN);
             this.Controls.Add(this.SidePannel);
+            this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
-            this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.SidePannel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SwapperIcon)).EndInit();
+            this.MainPannel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fnnews)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,7 +295,8 @@ namespace SwapperTemplate
         private Siticone.Desktop.UI.WinForms.SiticoneGradientPanel SidePannel;
         private Siticone.Desktop.UI.WinForms.SiticonePictureBox SwapperIcon;
         private Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow siticoneAnimateWindow1;
-        private Siticone.Desktop.UI.WinForms.SiticoneSeparator siticoneSeparator1;
+        private Siticone.Desktop.UI.WinForms.SiticonePictureBox fnnews;
+        private System.Windows.Forms.RichTextBox patchnotes;
     }
 }
 

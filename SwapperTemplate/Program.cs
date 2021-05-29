@@ -14,6 +14,7 @@ namespace SwapperTemplate
         [STAThread]
         static void Main()
         {
+            //Made By DRQSuperior#1337.
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
