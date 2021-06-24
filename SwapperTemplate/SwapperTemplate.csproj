@@ -50,15 +50,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="Backend\paks.cs" />
+    <Compile Include="Frontend\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Frontend\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main.resx">
+    <Compile Include="Usercontrols\backblings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\backblings.Designer.cs">
+      <DependentUpon>backblings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\emotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\emotes.Designer.cs">
+      <DependentUpon>emotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\misc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\misc.Designer.cs">
+      <DependentUpon>misc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\pickaxes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\pickaxes.Designer.cs">
+      <DependentUpon>pickaxes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\skins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\skins.Designer.cs">
+      <DependentUpon>skins.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frontend\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -70,6 +107,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Usercontrols\backblings.resx">
+      <DependentUpon>backblings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrols\emotes.resx">
+      <DependentUpon>emotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrols\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrols\misc.resx">
+      <DependentUpon>misc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrols\pickaxes.resx">
+      <DependentUpon>pickaxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrols\skins.resx">
+      <DependentUpon>skins.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,5 +139,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
